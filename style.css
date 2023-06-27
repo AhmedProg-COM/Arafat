@@ -1,13 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@600&display=swap');
 
 *{
   font-family: 'Cairo', sans-serif;
-}
-body{
-  padding: 0;
+  font-size: 14px;
   margin: 0;
-  
+  outline: none;
+  box-sizing: border-box;
 }
+
+body {
+  color: red;
+  background-color: #212121;
+  padding: 1.5rem;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  border: 2px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+.my-box {
+  background-color: #f7f7f7;
+  border: 2px solid #ddd;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 
     p {
       color: #333;
@@ -52,23 +72,62 @@ body{
     h1, h2, h3 {
       direction: rtl;
       text-align: right;
-      font-family: Arial, sans-serif;
+      font-family: 'Noto Naskh Arabic', serif;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
       color: #333;
     }
     h1 {
       font-size: 2.5rem;
+      font-family: 'Noto Naskh Arabic', serif;
       line-height: 1;
+      background: linear-gradient(#1abc9c, #3498db);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent
     }
     
     h2 {
       font-size: 2rem;
+      font-family: 'Noto Naskh Arabic', serif;
       line-height: 1.2;
       margin-top: 2rem;
+      background: linear-gradient(#1abc9c, #3498db);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent
     }
     
     h3 {
-      font-size: 1.5rem;
+      font-size: 2rem;
+      font-family: 'Noto Naskh Arabic', serif;
       line-height: 1.4;
       margin-top: 1.5rem;
+      background: linear-gradient(#1abc9c, #3498db);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent
+    }
+    
+    @media(max-width: 479px) {
+      body {
+        font-size: 14px;
+      }
+    }
+    
+    /* درجة استجابة للأجهزة التي تحتاج 481 - 767 بكسل */
+    @media(min-width: 480px) and (max-width: 767px) {
+      body {
+        font-size: 15px;
+      }
+    }
+    
+    /* درجة استجابة للأجهزة التي تحتاج 768 - 991 بكسل */
+    @media(min-width: 768px) and (max-width: 991px) {
+      body {
+        font-size: 16px;
+      }
+    }
+    
+    /* درجة استجابة للأجهزة التي تحتاج أكثر من 992 بكسل */
+    @media(min-width: 992px) {
+      body {
+        font-size: 18px;
+      }
     }
